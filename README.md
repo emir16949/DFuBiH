@@ -2,7 +2,7 @@
 
 Društvo fizičara u Bosni i Hercegovini - Emir Baručija
 
-# I  - Šta je urađeno?
+### I  - Šta je urađeno?
 
 Urađene su sve stavke:
 
@@ -20,25 +20,25 @@ f- Stranica nema glitcheva, urađena kao grid view, nema problema sa skaliranjim
 
 
 
-II  - Šta nije urađeno?
+### II  - Šta nije urađeno?
 
 Svi traženi dijelovi su urađeni, takođe vođeno računa o responzivnosti web stranice i ostalim potrebnim stvarima.
 
 
 
-III - Bug-ovi koje ste primijetili ali niste stigli ispraviti, a znate rješenje (opis rješenja)
+### III - Bug-ovi koje ste primijetili ali niste stigli ispraviti, a znate rješenje (opis rješenja)
 
 Nisam primijetio da u commitanoj verziji ima ijedan bug u dizajnu stranice.
 
 
 
-IV  - Bug-ovi koje ste primijetili ali ne znate rješenje
+### IV  - Bug-ovi koje ste primijetili ali ne znate rješenje
 
 Postojao je jedan bug o kojem smo raspravljali na tutorijalu, da se meni na podstranici "O nama" pri manjim dimenzijama misteriozno i bez ikakvog razloga uveća, dok na ostalim ostane sasvim OK, i problem je bio baš sa tom podstranicom. Međutim, kod kuće poslije je sve bilo sasvim OK, nije bilo tih problema, tako da je vjerovatno bio neki problem sa Chrome-om.
 
 
 
-V  - Lista fajlova u formatu NAZIVFAJLA - Opis u vidu jedne rečenice šta se u fajlu nalazi
+### V  - Lista fajlova u formatu NAZIVFAJLA - Opis u vidu jedne rečenice šta se u fajlu nalazi
 
 Mockups - Folder gdje se nalaze mockupi podstranica (5 slika za 5 podstranica)
 
