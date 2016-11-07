@@ -8,7 +8,7 @@ Urađene su sve stavke:
 
 a- Urađeni mockupi, istina nacrtani rukom, ali prikazuju sasvim fino kako bi stranica trebala da izgleda, šta će gdje biti raspoređeno i slično.
 
-b- Svih pet tabova koji imaju, su responzivni, pri smanjivanju stranice ne dolazi do prelaska elemenata jednih preko drugih, nego korisnik ima mogućnost da skrola horizontalno (i vertikalno), ukoliko želi da vidi nešto što je nestalo iz glavnog pogleda.
+b- Svih pet tabova koji imaju, su responzivni, pri smanjivanju stranice ne dolazi do prelaska elemenata jednih preko drugih, nego korisnik ima mogućnost da skrola horizontalno (i vertikalno), ukoliko želi da vidi nešto što je nestalo iz glavnog pogleda. Takođe su izvalidirani svi .html i .css fajlovi, te je ustanovljeno da nema nikakvih grešaka u njima.
 
 c- Pošto na mom telefonu, sve mi je izgledalo sasvim ok, i stranica se sasvim uredno prikazivala, onda sam ovdje samo promijenio veličine fonta, čisto kako bih pokazao da znam raditi sa media queries-ima, te još malo promijenio dizajn stranice "O nama". Mockupe za ovaj dio nisam radio jer bi bili praktično isti kao i oni pod a), pošto nisam pravio nikakvu suštinsku razliku u odnosu na obični slučaj, te sam stoga smatrao da nema potrebe da ponovo pravim mockupe (koji bi izgledali skoro pa identično kao prethodni).
 
