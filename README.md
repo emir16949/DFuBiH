@@ -2,14 +2,20 @@
 
 Društvo fizičara u Bosni i Hercegovini - Emir Baručija
 
-I  - Šta je urađeno?
+# I  - Šta je urađeno?
 
 Urađene su sve stavke:
+
 a- Urađeni mockupi, istina nacrtani rukom, ali prikazuju sasvim fino kako bi stranica trebala da izgleda, šta će gdje biti raspoređeno i slično.
+
 b- Svih pet tabova koji imaju, su responzivni, pri smanjivanju stranice ne dolazi do prelaska elemenata jednih preko drugih, nego korisnik ima mogućnost da skrola horizontalno (i vertikalno), ukoliko želi da vidi nešto što je nestalo iz glavnog pogleda.
+
 c- Pošto na mom telefonu, sve mi je izgledalo sasvim ok, i stranica se sasvim uredno prikazivala, onda sam ovdje samo promijenio veličine fonta, čisto kako bih pokazao da znam raditi sa media queries-ima, te još malo promijenio dizajn stranice "O nama". Mockupe za ovaj dio nisam radio jer bi bili praktično isti kao i oni pod a), pošto nisam pravio nikakvu suštinsku razliku u odnosu na obični slučaj, te sam stoga smatrao da nema potrebe da ponovo pravim mockupe (koji bi izgledali skoro pa identično kao prethodni).
+
 d- Implementirane 3 forme - na "Početna" stavljena forma za ocjenu stranice, na "O nama" stavljena forma za donaciju Društvu ili za prijavu za pomoć u radu Društva, te na "Kontakt" stavljena forma kojom se može poslati upit Društvu uz ostavljanje maila na koji se može vratiti odgovor.
+
 e- Implementiran meni, sastavljen od 5 podstranica, koji se vidi na svakoj od podstranica, i na svakoj isto izgleda.
+
 f- Stranica nema glitcheva, urađena kao grid view, nema problema sa skaliranjima i ostalo.
 
 
