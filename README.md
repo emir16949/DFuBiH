@@ -86,7 +86,7 @@ a- Urađene validacije svih formi, validacija forme na tabu Historijat, i na tab
 
 b- Urađen dropdown meni na tabu O nama, koji nudi dvije opcije, Historijat i Slike, tako da kada se klikne na Historijat otvori historijat Društva, sa formom za slanje donacije i pomoć u radu Društva, dok klikom na tab slike se otvaraju slike sa prethodnih olimpijada
 
-c- Urađeno da se klikom na sliku (inače se to radi u tabu Slike), povećava slika na širinu ekrana, i onda se može zatvoriti jedino klikom na esc dugme
+c- Urađeno da se klikom na sliku povećava slika na širinu ekrana, i onda se može zatvoriti jedino klikom na esc dugme
 
 d- Iskorišten ajax kako bi se reload-ao jedino donji dio stranice, dakle ispod menija, a ostalo ostaje isto i ne reload-a se
 
@@ -123,8 +123,6 @@ Nisam primijetio da u commitanoj verziji ima ijedan bug u dizajnu stranice.
 2014_oli - slika BH olimpijskog tima 2014. godine napravljena nakon slijetanja na Međunarodni aerodrom Sarajevo
 
 2016 - slika BH olimpijskog tima sa olimpijade 2016. godine u Švicarskoj i Lihtenštajnu
-
-2016_kan_osn - slika sa Kantonalnog takmičenja 2016. godine za osnovne škole
 
 index - glavni html fajl gdje se nalaze sve deklaracije, head tag, meni, zaglavlje i ostalo
 
