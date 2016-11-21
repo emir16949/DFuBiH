@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="Stil.css">
+	<meta name="viewport" content="width=device-width" />
+	<script type="text/javascript" src="Skripta.js"></script>
+	<title>DFuBiH</title>
+</head>
+
+
+<body>
+
+<div id="divProsirena">
+	<img id="slikaProsirena"/>
+</div>
+
+
+<div id="citavo">
+
+<div id="naslov">
+	<h1>Društvo fizičara u Bosni i Hercegovini</h1>
+</div>
+
+<div id="meni">
+	<ul class="lista">
+		<li><a id="tab1" href="#" onclick="ucitaj('Pocetna.html')">Početna</a> </li>
+		<li class="dropdown">
+			<a id="tab2" href="#" class="dropbtn">O nama</a>
+			<div class="dropdown-content">
+				<a id="tab3" href="#" onclick="ucitaj('O_nama_Historijat.html')">Historijat</a>
+				<a id="tab4" href="#" onclick="ucitaj('O_nama_Slike.html')">Slike</a>
+			</div>
+		</li>				
+		<li><a id="tab5" href="#" onclick="ucitaj('IPhO_i_RMPh.html')">IPhO &amp; RMPh</a> </li>
+		<li><a id="tab6" href="#" onclick="ucitaj('Takmicenja.html')">Takmičenja</a> </li>
+		<li><a id="tab7" href="#" onclick="ucitaj('Kontakt.html')">Kontakt</a> </li>
+	</ul>
+</div>
+
+<div id="container">
+  
+<div class="tekst_1">
+	<h1>Dobro došli na web stranicu Društva fizičara u Bosni i Hercegovini. Ovdje ćemo objavljivati novosti vezane za društvo.</h1>
+</div>
+
+<div class="ocjenjivanje_1">
+	<h3>Ocijenite web stranicu</h3>
+	<form  action="index.html" method="get">
+		<input type="radio" name="ocjena" value="1"> 1<br>
+		<input type="radio" name="ocjena" value="2"> 2<br>
+		<input type="radio" name="ocjena" value="3"> 3<br>
+		<input type="radio" name="ocjena" value="4"> 4<br>
+		<input type="radio" name="ocjena" value="5" checked> 5<br><br>
+		<input type="submit" value="Pošalji">
+	</form>
+</div>
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

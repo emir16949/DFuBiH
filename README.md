@@ -2,6 +2,8 @@
 
 Društvo fizičara u Bosni i Hercegovini - Emir Baručija
 
+## Spirala 1
+
 ### I  - Šta je urađeno?
 
 Urađene su sve stavke:
@@ -67,3 +69,77 @@ Pocetna - html fajl za 1. podstranicu
 Stil - css fajl za čitavu stranicu
 
 Takmicenja - html fajl za 4. podstranicu
+
+
+
+
+
+
+
+## Spirala 2
+
+### I  - Šta je urađeno?
+
+Urađene su sve stavke:
+
+a- Urađene validacije svih formi, validacija forme na tabu Historijat, i na tabu Kontakt, u potpunosti izvalidirane od grešaka
+
+b- Urađen dropdown meni na tabu O nama, koji nudi dvije opcije, Historijat i Slike, tako da kada se klikne na Historijat otvori historijat Društva, sa formom za slanje donacije i pomoć u radu Društva, dok klikom na tab slike se otvaraju slike sa prethodnih olimpijada
+
+c- Urađeno da se klikom na sliku (inače se to radi u tabu Slike), povećava slika na širinu ekrana, i onda se može zatvoriti jedino klikom na esc dugme
+
+d- Iskorišten ajax kako bi se reload-ao jedino donji dio stranice, dakle ispod menija, a ostalo ostaje isto i ne reload-a se
+
+
+
+### II  - Šta nije urađeno?
+
+Svi traženi dijelovi su urađeni, dakle u dijelu B urađen dropdown meni i povećanje slike klikom na nju, te uklanjanje klikom na esc dugme (1 + 3 = 4 boda)
+
+
+
+### III - Bug-ovi koje ste primijetili ali niste stigli ispraviti, a znate rješenje (opis rješenja)
+
+Nisam primijetio da u commitanoj verziji ima ijedan bug u dizajnu stranice.
+
+
+
+### IV  - Bug-ovi koje ste primijetili ali ne znate rješenje
+
+Nisam primijetio da u commitanoj verziji ima ijedan bug u dizajnu stranice.
+
+
+
+### V  - Lista fajlova u formatu NAZIVFAJLA - Opis u vidu jedne rečenice šta se u fajlu nalazi
+
+2011_fed - slika sa Federalnog takmičenja 2011. godine za srednje škole
+
+2012_fed_osn - slika sa Federalnog takmičenja 2012. godine za osnovne škole
+
+2013_fed - slika sa Federalnog takmičenja 2013. godine za srednje škole
+
+2014 - slika BH olimpijskog tima sa olimpijade 2014. godine u Kazahstanu
+
+2014_oli - slika BH olimpijskog tima 2014. godine napravljena nakon slijetanja na Međunarodni aerodrom Sarajevo
+
+2016 - slika BH olimpijskog tima sa olimpijade 2016. godine u Švicarskoj i Lihtenštajnu
+
+2016_kan_osn - slika sa Kantonalnog takmičenja 2016. godine za osnovne škole
+
+index - glavni html fajl gdje se nalaze sve deklaracije, head tag, meni, zaglavlje i ostalo
+
+IPhO_i_RMPh - html kostur za 3. tab
+
+Kontakt - html kostur za 5. tab
+
+O_nama_Historijat - html kostur za 1. podstranicu 2. taba
+
+O_nama_Slike - html kostur za 2. podstranicu 2. taba
+
+Pocetna - html kostur za 1. tab
+
+Skripta - javascript fajl, gdje se nalazi kod za validaciju, prikaz uvećane slike, njeno uklanjanje klikom na esc dugme, te dio vezan za ajax
+
+Stil - css fajl za čitavu stranicu
+
+Takmicenja - html kostur za 4. tab

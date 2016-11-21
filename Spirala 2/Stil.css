@@ -1,0 +1,307 @@
+
+body {
+	margin: 0px;
+	background-color: #c0dfd9;
+}
+
+#container {
+	width: 1000px;
+	min-width: 100%;
+}
+
+#naslov {
+	color: white;
+    font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	background: #173e43;
+	padding: 5px;
+	font-size: 100%;
+}
+
+.lista {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+    background-color: #64706c;
+}
+
+.lista li {
+    float: left;
+	border-right: 2px solid #bbb;
+}
+
+.lista li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.lista li a.selektovan {
+    background-color: #a00;
+}
+
+.lista li a:hover, .dropdown:hover {
+    background-color: #000;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #64706c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.tekst_1 {
+	float: left;
+	width: 74%;
+	margin: 1%;
+	font-size: 100%;
+}
+
+.ocjenjivanje_1 {
+	float: right;
+	width: 16%;
+	margin: 1%;
+	background-color: #a0bfb9;
+	border: solid black;
+	padding: 2%;
+}
+
+input, textarea {
+	max-width: 100%;
+}
+
+.tekst_2 {
+	float: left;
+	width: 74%;
+	margin: 1%;
+	font-size: 110%;
+	text-align: justify;
+}
+
+.popunjavanje_2 {
+	float: right;
+	width: 16%;
+	margin: 1%;
+	background-color: #a0bfb9;
+	text-align: justify;
+	border: solid black;
+	padding: 2%;
+}
+
+.slika1_2 {
+	float: left;
+	width: 48%;
+	margin: 1%;
+	font-size: 100%;
+	text-align: justify;
+}
+
+.slika2_2 {
+	float: right;
+	width: 48%;
+	margin: 1%;
+	font-size: 100%;
+	text-align: justify;
+}
+
+.drugiRed_2 {
+	float: left;
+}
+
+.slike_2 {
+	height: 250px;
+	width: 360px;
+	max-width: 95%;
+}
+
+#h3_3 {
+	padding-left: 15px;
+}
+
+#tabela_3 {
+	overflow-x: auto;
+	padding: 15px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    height: 50px;
+    background-color: LightCoral;
+    color: white;
+}
+
+th, td {
+    padding: 10px;	
+	text-align: center;
+}
+
+.god2016_3 {
+	background-color: Teal;
+	color:white; 
+}
+
+.god2015_3 {
+	background-color: DarkRed;
+	color:white; 
+}
+
+.god2014_3 {
+	background-color: DarkGreen;
+	color:white; 
+}
+
+.tak_lista_4 li {
+	font-size: 100%;
+}
+
+.tak_lista_4 li p {
+	font-size: 100%;
+}
+
+.sadrzaj_4 {
+	width: 42%;
+	margin: 1%;
+	padding: 1%;
+	text-align: justify;
+	float: left;
+}
+
+.slike_4 {
+	width: 50%;
+	margin: 1%;
+	padding: 1%;
+	float: right;
+	text-align: center;
+}
+
+.slika1_4 {
+	height: 160px;
+	width: 380px;
+	max-width: 95%;
+}
+
+.slika2_4 {
+	height: 240px;
+	width: 380px;
+	max-width: 95%;
+}
+
+.tekst_5 {
+	float: left;
+	width: 74%;
+	margin: 1%;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.ocjenjivanje_5 {
+	float: right;
+	width: 16%;
+	margin: 1%;
+	background-color: #a0bfb9;
+	border: solid black;
+	padding: 2%;
+}
+
+/* Za male ekrane povećavamo veličinu teksta i malo redizajniramo izgled taba O nama */
+@media screen and (max-width: 666px) {
+.lista li a {
+	font-size: 130%;
+}
+
+.ocjenjivanje_1 {
+	font-size: 120%;
+}
+
+.tekst_2 {
+	font-size: 120%;
+	width: 65%;
+}
+
+.popunjavanje_2 {
+	font-size: 120%;
+	width: 25%;
+}
+
+.slika1_2 {
+	font-size: 120%;
+}
+
+.slika2_2 {
+	font-size: 120%;
+}
+
+table {
+	font-size: 120%;
+}
+
+.tak_lista_4 li {
+	font-size: 120%;
+}
+
+.tak_lista_4 li p {
+	font-size: 120%;
+}
+
+.sadrzaj_4 {
+	font-size: 120%;
+}
+
+.slike_4 {
+	font-size: 120%;
+}
+}
+
+.greska {
+	font-size: 90%;
+	color:red;
+}
+
+#slikaProsirena
+{
+	height: 100%; 
+	margin: 0%;
+	padding: 0%;
+}
+
+#divProsirena
+{
+	display: none;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+    position: fixed;
+	background-color: rgba(127, 127, 127, 0.8);
+	z-index: 1;
+}

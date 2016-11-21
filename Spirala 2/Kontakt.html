@@ -1,0 +1,27 @@
+<div id="container">
+
+ 
+<div class="tekst_5">
+	<h2> Kontakt informacije: </h2>
+	<h4> Ulica: Zmaja od Bosne 35, 71 000 Sarajevo (zgrada Prirodno-matematičkog fakulteta)</h4>
+	<h4> E-mail: dfubih@gmail.com</h4>
+	<h4> Kontakt telefon: 033-854-296</h4>
+</div>
+
+<div class="ocjenjivanje_5">
+	<h3> Pošaljite nam pitanje:</h3>
+	<form action="mailto:dfubih@gmail.com" method="post" onsubmit="return validacijaKontakt()">
+		Vaše ime i prezime:<br>
+		<input type="text" id="imeiprezime_5" name="ime" onblur="return provjeraObjekti(this)">
+		<p id="par1_5" class="greska"></p>
+		E-mail na koji ćemo Vam poslati odgovor:<br>
+		<input type="text" id="mail_5" name="mail" onblur="return provjeraObjekti(this)">
+		<p id="par2_5" class="greska"></p>
+		Pitanje, komentar, kritika, pohvala:<br>
+		<textarea id="poruka_5" rows="7" cols="25" name="poruka" onblur="return provjeraObjekti(this)"></textarea>
+		<p id="par3_5" class="greska"></p>
+		<input type="submit" value="Pošalji"><br>
+	</form>
+</div>
+
+</div>
