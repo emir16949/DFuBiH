@@ -55,7 +55,6 @@
 	Međunarodnoj olimpijadi iz fizike, IPhO 2017, i ŽELIMO IM PUNO USPJEHA U RADU. </p>
 </div>
 
-
 <div class="popunjavanje_2">
 	<h3> Ukoliko želite da pomognete u radu društva ili donirate novac javite nam se na mail:</h3>
 	<form action="mailto:dfubih@gmail.com" method="post" onsubmit="return validacijaONama()">

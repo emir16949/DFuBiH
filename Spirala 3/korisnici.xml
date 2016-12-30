@@ -7,20 +7,18 @@
 		<ocjena>1</ocjena>
 	</user>
 	<user>
-		<username>emir</username>
+		<username>emir1</username>
 		<password>c4ca4238a0b923820dcc509a6f75849b</password>
 		<ocjena>-</ocjena>
 	</user>
 		
 	<user>
-		<username>test</username>
+		<username>testiramo</username>
 		<password>a87ff679a2f3e71d9181a67b7542122c</password>
 		<ocjena>2</ocjena>
 	</user>
-	
-	
 	<user>
-		<username>probni korisnik</username>
+		<username>probni</username>
 		<password>c4ca4238a0b923820dcc509a6f75849b</password>
 		<ocjena>5</ocjena>
 	</user>

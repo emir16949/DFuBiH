@@ -133,6 +133,14 @@ li.dropdown {
 	text-align: justify;
 }
 
+.tekst2_1 {
+	float: left;
+	width: 90%;
+	border: 4%;
+	font-size: 100%;
+	text-align: justify;
+}
+
 .ocjenjivanje_1 {
 	float: right;
 	width: 16%;

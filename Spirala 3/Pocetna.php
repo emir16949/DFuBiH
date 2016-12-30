@@ -109,7 +109,7 @@ else
 {
 ?>
 
-<div class="tekst_1">
+<div class="tekst2_1">
 	<h1>Dobro došli na web stranicu Društva fizičara u Bosni i Hercegovini. Molimo Vas da se potpuno besplatno registrujete, kako biste mogli čitati novosti, ocijeniti stranicu i mnoge druge stvari.</h1>
 </div>
 

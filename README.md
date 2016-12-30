@@ -9,7 +9,7 @@ Društvo fizičara u Bosni i Hercegovini - Emir Baručija
 Urađene su sve stavke:
 
 a) Urađena serijalizacija podataka u XML, i to serijalizirani korisnici (username, password, ocjena stranice), zatim takmičari na olimpijadama (godina, ime i prezime, rezultat), te novosti (naslov, tekst).
-Sve je izvalidirano u phpu i stranica je zaštićena od XSS-a.
+Sve je izvalidirano u phpu i stranica je zaštićena od XSS-a, korištenjem html special chars.
 Samo admin može raditi editovanje, unos i brisanje podataka. Ostali korisnici mogu da gledaju podatke na stranici.
 Adminov username je admin, password je pass.
 

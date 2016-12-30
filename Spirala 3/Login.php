@@ -1,5 +1,44 @@
 <?php
 	session_start();
+
+	$usernameErr = $passwordErr = "";
+	$username = $password = "";
+
+	if ($_SERVER["REQUEST_METHOD"] == "POST")
+		if (empty($_POST["username"]))
+		{
+			$usernameErr = "Morate unijeti username";
+		}
+		else
+		{
+			$username = test_input($_POST["username"]);
+			if (!preg_match("/^[a-zA-Z0-9]{5,}$/",$username)) 
+			{
+				$usernameErr = "Samo su slova i brojevi dozvoljeni u username-u, i ono mora imati barem 5 znakova"; 
+			}
+		}
+	
+	if ($_SERVER["REQUEST_METHOD"] == "POST")
+		if (empty($_POST["password"]))
+		{
+			$passwordErr = "Morate unijeti password";
+		}
+		else
+		{
+			$password = test_input($_POST["password"]);
+			if (!preg_match("/^[a-zA-Z0-9]{6,}$/",$username)) 
+			{
+				$passwordErr = "Samo su slova i brojevi dozvoljeni u passwordu, i on mora imati barem 6 znakova"; 
+			}
+		}
+
+	function test_input($data)
+	{
+		$data = trim($data);
+		$data = stripslashes($data);
+		$data = htmlspecialchars($data);
+		return $data;
+	}
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +57,7 @@
 
 <?php
 	$poruka = "";
+	$stari_password = "";
 	if(!isset($_SESSION['username']))
 	{
 		if(isset($_POST['loginuj_se']))
@@ -30,6 +70,7 @@
 				if ($username == "" || $password == "")
 					$poruka = "Morate unijeti oba polja za prijavu.";
 				
+				$stari_password = $password;
 				$password = md5($password);
 				
 				if(file_exists('korisnici.xml'))
@@ -49,7 +90,7 @@
 					}
 					
 					if ($nasao == 0 && $poruka == "")
-						$poruka = "Username i/ili password nisu ispravni. Pokušajte ponovo.";					
+						$poruka = "Username i/ili password nisu ispravni ili ne postoje. Pokušajte ponovo.";					
 				}
 			}
 		}
@@ -131,9 +172,11 @@ else
 	<h3> Login:</h3>
 	<form method="post" action="Login.php">
 		Username:<br>
-		<input type="text" id="username2_4" name="username" onblur="return provjeraObjekti(this)"> <br><br>
+		<input type="text" id="username_4" name="username" onblur="return provjeraObjekti(this)" value="<?php echo $username;?>"> <br>
+		<p class="greska"> <?php echo $usernameErr; ?> </p>
 		Password:<br>
-		<input name="password" id="password2_4" type="password" onblur="return provjeraObjekti(this)"><br><br>
+		<input name="password" id="password_4" type="password" onblur="return provjeraObjekti(this)" value="<?php echo $stari_password;?>"><br>
+		<p class="greska"> <?php echo $passwordErr; ?> </p>
 		<input type="submit" value="Pošalji" name="loginuj_se"><br>
 		<p id="par1_4" class="greska"><?php echo $poruka; ?></p>
 	</form>
