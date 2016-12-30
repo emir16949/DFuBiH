@@ -43,11 +43,14 @@
 
 	  $obrisati = null;
 	  $i = $_POST['obrisi'];
+	  if ($i == 0) $usernameErr = "Ne možete obrisati admina.";
+	  else {
 	  $obrisati = $podaci->item($i);
 	  
 	  if($obrisati != null) $obrisati->parentNode->removeChild($obrisati);
 
 	  file_put_contents('korisnici.xml', $xml->saveXML());
+	  }
   }
   
   if(isset($_POST['sacuvaj']) && $usernameErr == "")
@@ -131,6 +134,17 @@
 			    <?php } ?>				
 				
 				<button type="submit" name="obrisi" value = "<?php echo $x;?>">Obriši</button>
+				
+								<?php
+					if(isset($_POST['obrisi']) && $_POST['obrisi'] == $x)
+					{
+				?>
+				<p class="greska"> <?php echo $usernameErr; ?> </p>
+			    <?php } ?>				
+				
+				
+				
+				
 				<?php
 					if(isset($_POST['edituj']) && $_POST['edituj'] == $x)
 					{

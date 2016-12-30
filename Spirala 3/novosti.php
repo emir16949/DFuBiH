@@ -1,5 +1,66 @@
 <?php
   session_start();
+  
+  
+  
+  
+	$naslovErr = $tekstErr = "";
+	$naslov = $tekst = "";
+
+	
+	if ($_SERVER["REQUEST_METHOD"] == "POST")
+		if (empty($_POST["novi_naslov"]) && isset($_POST["novi_naslov"]))
+		{
+			$naslovErr = "Naslov ne može biti prazan";
+		}
+		else if (!empty($_POST["novi_naslov"]))
+		{
+			$naslov = test_input($_POST["novi_naslov"]);
+			if (!preg_match("/.{10,}/",$naslov)) 
+			{
+				$naslovErr = "Naslov mora imati minimalno 10 karaktera"; 
+			}
+		}
+		
+	if ($_SERVER["REQUEST_METHOD"] == "POST")
+		if (empty($_POST["novi_tekst"]) && isset($_POST["novi_tekst"]))
+		{
+			$tekstErr = "Tekst ne može biti prazan";
+		}
+		else if (!empty($_POST["novi_tekst"]))
+		{
+			$tekst = test_input($_POST["novi_tekst"]);
+			if (!preg_match("/.{20,}/",$tekst)) 
+			{
+				$tekstErr = "Tekst mora imati minimalno 20 karaktera"; 
+			}
+		}
+
+	function test_input($data)
+	{
+		$data = trim($data);
+		$data = stripslashes($data);
+		$data = htmlspecialchars($data);
+		return $data;
+	}
+
+
+	
+	
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   // korišten dom document jer nisam našao da se preko simplexml može potpuno obrisati čvor u xmlu
   $xml = new DOMDocument();
   $xml->load('novosti.xml');
@@ -17,7 +78,7 @@
 	  file_put_contents('novosti.xml', $xml->saveXML());
   }
   
-  if(isset($_POST['sacuvaj_naslov']))
+  if(isset($_POST['sacuvaj_naslov']) && $naslovErr == "")
   {
 	  $novo = $_POST['novi_naslov'];
 	  $i = $_POST['sacuvaj_naslov'];
@@ -27,7 +88,7 @@
 	  file_put_contents('novosti.xml', $xml->saveXML());
   }
   
-  if(isset($_POST['sacuvaj_tekst']))
+  if(isset($_POST['sacuvaj_tekst']) && $tekstErr == "")
   {
 	  $novo = $_POST['novi_tekst'];
 	  $i = $_POST['sacuvaj_tekst'];
@@ -37,7 +98,38 @@
 	  file_put_contents('novosti.xml', $xml->saveXML());
   }
 
-  if(isset($_POST['unos_novog']))
+  
+  	if ($_SERVER["REQUEST_METHOD"] == "POST")
+		if (empty($_POST["unos_naslov"]) && isset($_POST["unos_naslov"]))
+		{
+			$naslovErr = "Naslov ne može biti prazan";
+		}
+		else if (!empty($_POST["unos_naslov"]))
+		{
+			$naslov = test_input($_POST["unos_naslov"]);
+			if (!preg_match("/.{10,}/",$naslov)) 
+			{
+				$naslovErr = "Naslov smije sadržavati samo slova, brojeve i razmake, i mora imati minimalno 10 karaktera"; 
+			}
+		}
+		
+	if ($_SERVER["REQUEST_METHOD"] == "POST")
+		if (empty($_POST["unos_tekst"]) && isset($_POST["unos_tekst"]))
+		{
+			$tekstErr = "Tekst ne može biti prazan";
+		}
+		else if (!empty($_POST["unos_tekst"]))
+		{
+			$tekst = test_input($_POST["unos_tekst"]);
+			if (!preg_match("/.{20,}/",$tekst)) 
+			{
+				$tekstErr = "Tekst smije sadržavati samo slova, brojeve i razmake, i mora imati minimalno 20 karaktera"; 
+			}
+		}
+  
+  
+  
+  if(isset($_POST['unos_novog']) && $naslovErr == "" && $tekstErr == "")
   {
 	  $naslov = $_POST['unos_naslov'];
 	  $tekst = $_POST['unos_tekst'];
@@ -55,7 +147,7 @@
 	  $novosti = $xml->getElementsByTagName('novost');
 	  
 	  
-	  $takmicari->item(0)->parentNode->insertBefore($node, $takmicari->item(0));
+	  $novosti->item(0)->parentNode->insertBefore($node, $novosti->item(0));
 	  
 	  file_put_contents('novosti.xml', $xml->saveXML());	  
   }  
@@ -167,9 +259,21 @@
 		<tr>
 			<td>
 				<input type="text" name="unos_naslov">
+										<?php
+					if(isset($_POST['unos_naslov']) && $naslovErr != "")
+					{
+				?>
+				<p class="greska"> <?php echo $tekstErr; ?> </p>
+			    <?php } ?>	
 			</td>
 			<td>
 				<textarea rows="10" cols="30" type="text" name="unos_tekst"></textarea>
+										<?php
+					if(isset($_POST['unos_tekst']) && $tekstErr != "")
+					{
+				?>
+				<p class="greska"> <?php echo $tekstErr; ?> </p>
+			    <?php } ?>	
 			</td>
 			<td>
 				<button type="submit" name="unos_novog">Unesi novu novost</button>
@@ -177,7 +281,46 @@
 		</tr>
 		</form>
 	<?php
-	} ?>
+	}
+else if (isset($_POST['unos_naslov']) || isset($_POST['unos_tekst']))
+	
+{ ?>
+		<table border="2px solid black" align="center" style="width:80%">
+		<tr>
+			<th>Naslov</th>
+			<th>Tekst</th>
+		</tr>
+		<form action='novosti.php' method='post'>
+		<tr>
+			<td>
+				<input type="text" name="unos_naslov">
+										<?php
+					if(isset($_POST['unos_naslov']) && $naslovErr != "")
+					{
+				?>
+				<p class="greska"> <?php echo $naslovErr; ?> </p>
+			    <?php } ?>	
+			</td>
+			<td>
+				<textarea rows="10" cols="30" type="text" name="unos_tekst"></textarea>
+										<?php
+					if(isset($_POST['unos_tekst']) && $tekstErr != "")
+					{
+				?>
+				<p class="greska"> <?php echo $tekstErr; ?> </p>
+			    <?php } ?>	
+			</td>
+			<td>
+				<button type="submit" name="unos_novog">Unesi novu novost</button>
+			</td>
+		</tr>
+		</form>
+	<?php
+	}
+
+
+
+	?>
 
 
 <table border="2px solid black" align="center" style="width:80%">
@@ -195,6 +338,12 @@
 		<form action='novosti.php' method='post'>
 			<button type="submit" name="edituj_naslov" value = "<?php echo $x;?>">Edituj</button>
 			<?php
+					if(isset($_POST['sacuvaj_naslov']) && $_POST['sacuvaj_naslov'] == $x && $naslovErr != "")
+					{
+				?>
+				<p class="greska"> <?php echo $naslovErr; ?> </p>
+			    <?php } ?>		
+			<?php
 				if(isset($_POST['edituj_naslov']) && $_POST['edituj_naslov'] == $x)
 				{ ?>
 					<form action='novosti.php' method='post'>
@@ -208,6 +357,12 @@
 		<td align="center"> <?php echo $nov->tekst ?> 
 		<form action='novosti.php' method='post'>
 			<button type="submit" name="edituj_tekst" value = "<?php echo $x;?>">Edituj</button>
+						<?php
+					if(isset($_POST['sacuvaj_tekst']) && $_POST['sacuvaj_tekst'] == $x && $tekstErr != "")
+					{
+				?>
+				<p class="greska"> <?php echo $tekstErr; ?> </p>
+			    <?php } ?>				
 			<?php
 				if(isset($_POST['edituj_tekst']) && $_POST['edituj_tekst'] == $x)
 				{ ?>
