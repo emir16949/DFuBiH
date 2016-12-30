@@ -1,5 +1,38 @@
 <?php
   session_start();
+
+
+
+
+
+	$usernameErr = "";
+	$username = "";
+
+	if ($_SERVER["REQUEST_METHOD"] == "POST")
+		if (empty($_POST["novi_username"]))
+		{
+			$usernameErr = "Morate unijeti username";
+		}
+		else
+		{
+			$username = test_input($_POST["novi_username"]);
+			if (!preg_match("/^[a-zA-Z0-9]{5,}$/",$username)) 
+			{
+				$usernameErr = "Samo su slova i brojevi dozvoljeni u username-u, i ono mora imati barem 5 znakova"; 
+			}
+		}
+
+	function test_input($data)
+	{
+		$data = trim($data);
+		$data = stripslashes($data);
+		$data = htmlspecialchars($data);
+		return $data;
+	}
+
+
+
+
   // korišten dom document jer nisam našao da se preko simplexml može potpuno obrisati čvor u xmlu
   $xml = new DOMDocument();
   $xml->load('korisnici.xml');
@@ -17,7 +50,7 @@
 	  file_put_contents('korisnici.xml', $xml->saveXML());
   }
   
-  if(isset($_POST['sacuvaj']))
+  if(isset($_POST['sacuvaj']) && $usernameErr == "")
   {
 	  $novo = $_POST['novi_username'];
 	  $i = $_POST['sacuvaj'];
@@ -90,15 +123,22 @@
         <td align="center"> 
 			<form action='korisnici.php' method='post'>
 				<button type="submit" name="edituj" value = "<?php echo $x;?>">Edituj</button>
+				<?php
+					if(isset($_POST['sacuvaj']) && $_POST['sacuvaj'] == $x)
+					{
+				?>
+				<p class="greska"> <?php echo $usernameErr; ?> </p>
+			    <?php } ?>				
+				
 				<button type="submit" name="obrisi" value = "<?php echo $x;?>">Obriši</button>
 				<?php
 					if(isset($_POST['edituj']) && $_POST['edituj'] == $x)
 					{
 				?>
-	<form action='korisnici.php' method='post'>
-		<input type="text" name="novi_username">
-		<button type="submit" name="sacuvaj" value = "<?php echo $x;?>">Sačuvaj</button>
-	</form>
+			<form action='korisnici.php' method='post'>
+				<input type="text" name="novi_username">
+				<button type="submit" name="sacuvaj" value = "<?php echo $x;?>">Sačuvaj</button>
+			</form>
 
 <?php
   }
