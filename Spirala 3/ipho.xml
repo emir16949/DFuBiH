@@ -1,0 +1,80 @@
+<?xml version="1.0" standalone="yes"?>
+<root>
+<takmicari>
+    <takmicar>
+		<godina>2016</godina>
+		<ime>Bahrudin Trbalic</ime>
+		<rezultat>srebrena medalja</rezultat>
+	</takmicar>
+	<takmicar>
+		<godina>2016</godina>
+		<ime>Nermedin Dzekovic</ime> 
+		<rezultat>srebrena medalja</rezultat>
+	</takmicar>
+	<takmicar>
+		<godina>2016</godina>
+		<ime>Dzenan Devedzic</ime> 
+		<rezultat>pocasna pohvala</rezultat>
+	</takmicar>
+		<takmicar>
+		<godina>2016</godina>
+		<ime>Haris Popovac</ime> 
+		<rezultat>-</rezultat>
+	</takmicar>
+	<takmicar>
+		<godina>2016</godina>
+		<ime>Damjan Iliskovic</ime> 
+		<rezultat>-</rezultat>
+	</takmicar>
+	<takmicar>
+		<godina>2015</godina>
+		<ime>Bahrudin Trbalic</ime> 
+		<rezultat>srebrena medalja</rezultat>
+	</takmicar>
+	<takmicar>
+		<godina>2015</godina>
+		<ime>Nermedin Dzekovic</ime> 
+		<rezultat>bronzana medalja</rezultat>
+	</takmicar>
+    <takmicar>
+		<godina>2015</godina>
+		<ime>Ajdin Palavric</ime>
+		<rezultat>pocasna pohvala</rezultat>
+	</takmicar>
+    <takmicar>
+		<godina>2015</godina>
+		<ime>Naida Dedic</ime> 
+		<rezultat>pocasna pohvala</rezultat>
+	</takmicar>
+    <takmicar>
+		<godina>2015</godina>
+		<ime>Mustafa Grabus</ime> 
+		<rezultat>-</rezultat>
+	</takmicar>
+    <takmicar>
+		<godina>2014</godina>
+		<ime>Nudzeim Selimovic</ime> 
+		<rezultat>srebrena medalja</rezultat>
+	</takmicar>
+    <takmicar>
+		<godina>2014</godina>
+		<ime>Emir Barucija</ime> 
+		<rezultat>pocasna pohvala</rezultat>
+	</takmicar>
+    <takmicar>
+		<godina>2014</godina>
+		<ime>Zoran Sukurma</ime> 
+		<rezultat>pocasna pohvala</rezultat>
+	</takmicar>
+    <takmicar>
+		<godina>2014</godina>
+		<ime>Muaz Kasumovic</ime> 
+		<rezultat>-</rezultat>
+	</takmicar>
+    <takmicar>
+		<godina>2014</godina>
+		<ime>Naida Dedic</ime> 
+		<rezultat>-</rezultat>
+	</takmicar>
+</takmicari>
+</root>

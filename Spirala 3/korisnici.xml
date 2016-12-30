@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<root>
+<korisnici>
+    <user>
+		<username>admin</username>
+		<password>1a1dc91c907325c69271ddf0c944bc72</password>
+		<ocjena>1</ocjena>
+	</user>
+	<user>
+		<username>emir</username>
+		<password>c4ca4238a0b923820dcc509a6f75849b</password>
+		<ocjena>-</ocjena>
+	</user>
+		
+	<user>
+		<username>test</username>
+		<password>a87ff679a2f3e71d9181a67b7542122c</password>
+		<ocjena>2</ocjena>
+	</user>
+	
+	
+	<user>
+		<username>probni korisnik</username>
+		<password>c4ca4238a0b923820dcc509a6f75849b</password>
+		<ocjena>5</ocjena>
+	</user>
+</korisnici>
+</root>
