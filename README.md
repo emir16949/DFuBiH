@@ -9,7 +9,7 @@ Društvo fizičara u Bosni i Hercegovini - Emir Baručija
 Urađene su sve stavke:
 
 a) Urađena serijalizacija podataka u XML, i to serijalizirani korisnici (username, password, ocjena stranice), zatim takmičari na olimpijadama (godina, ime i prezime, rezultat), te novosti (naslov, tekst).
-Sve je izvalidirano u phpu i stranica je zaštićena od XSS-a, korištenjem html special chars.
+Skoro sve je izvalidirano u phpu i stranica je zaštićena od XSS-a, korištenjem html special chars.
 Samo admin može raditi editovanje, unos i brisanje podataka. Ostali korisnici mogu da gledaju podatke na stranici.
 Adminov username je admin, password je pass.
 
@@ -38,9 +38,13 @@ Nisam primijetio da u commitanoj verziji ima ijedan bug.
 
 ### IV  - Bug-ovi koje ste primijetili ali ne znate rješenje
 
-Nisam primijetio da u commitanoj verziji ima ijedan bug.
+Jedino što mi je ostalo da uradim je validacija unosa i editovanja takmičara, dakle treba validirati unos i editovanje godine (staviti u regeksu da godina treba biti u intervalu od 1995 (prvo učešće BiH) - 2016), zatim da ime i prezime imaju minimalno po 2 slova (mada mislim da je kod nas najkraće prezime sa 3 slova, moguće da ima neko ime sa 2 slova), dok za rezultat treba staviti isključivo zlatna, srebrena, bronzana medalja i pohvala.
+Dakle regeksi bi izgledali ovako:
+1 - godina) /1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016/
+2 - ime i prezime) /^[a-zA-z]{2,}\s[a-zA-z]{3,}/
+3 - plasman) /zlatna medalja|srebrena medalja|bronzana medalja|počasna pohvala/
 
-
+Dakle, ostalo je dodati provjere tih regeksa u zaglavlju, i u zavisnosti od toga kako provjere završe ispisivati greške u kodu, na isti način kao što se uradilo kod korisnik.php i novosti.php
 
 ### V  - Lista fajlova u formatu NAZIVFAJLA - Opis u vidu jedne rečenice šta se u fajlu nalazi
 
