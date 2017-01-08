@@ -22,6 +22,8 @@ Pretraga se vrši po dva polja (godina i ime takmičara). Ukoliko ima bilo kakvo
 Stranica se ne reloada, urađeno uz pomoć javascripta te GET metode u phpu.
 Kada korisnik pritisne dugme traži, tada se učitavaju svi rezultati pretrage, a ne samo prvih 10.
 
+e) Urađen openshift, link na stranicu - http://wtprojekat-wtspirala.44fs.preview.openshiftapps.com/Spirala%203/Pocetna.php
+
 
 
 ### II  - Šta nije urađeno?
