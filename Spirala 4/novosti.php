@@ -40,8 +40,8 @@
 		$data = htmlspecialchars($data);
 		return $data;
 	}  
-  
-$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+  $veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
+//$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
 $veza->exec("set names utf8");
 
 if(isset($_POST['obrisi']))
@@ -235,7 +235,8 @@ if(isset($_POST['obrisi']))
 <div id="container">
 
 <?php
-$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
+//$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
 $veza->exec("set names utf8");
 				
 $upit = $veza->query("SELECT * FROM korisnik WHERE id=1;");
@@ -348,8 +349,8 @@ else if (isset($_POST['unos_naslov']) || isset($_POST['unos_tekst']))
 
 <?php
 
-
-$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
+//$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
 
 $veza->exec("set names utf8");
 

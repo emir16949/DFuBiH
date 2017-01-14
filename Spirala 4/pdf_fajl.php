@@ -34,7 +34,8 @@ class PDF extends FPDF
     $pdf->SetY(45);
 	$pdf->SetFont('Times', '', 14);
 	
-	$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+	$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
+	//$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
 	$veza->exec("set names utf8");
 	$upit = $veza->query("SELECT * FROM takmicar t, takmicenje tak WHERE t.id_takmicenja = tak.id;");
     foreach($upit as $tak)

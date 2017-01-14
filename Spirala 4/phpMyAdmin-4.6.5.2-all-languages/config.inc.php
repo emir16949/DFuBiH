@@ -31,8 +31,6 @@ $cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['host'] = getenv('MYSQL_SERVICE_HOST');
 $cfg['Servers'][$i]['connect_type'] = 'tcp';
 $cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['user'] = 'admin';
-$cfg['Servers'][$i]['password'] = 'adminpass';
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
 
 /**

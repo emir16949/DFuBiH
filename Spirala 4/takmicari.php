@@ -1,7 +1,8 @@
 <?php
   session_start();
-  
-  $veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+
+  $veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
+//  $veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
 
 $veza->exec("set names utf8");
 
@@ -254,7 +255,8 @@ $veza->exec("set names utf8");
 
 <?php
 
-$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
+//$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
 $veza->exec("set names utf8");
 				
 $upit = $veza->query("SELECT * FROM korisnik WHERE id=1;");
@@ -363,7 +365,8 @@ foreach($upit as $kor)
 
 <?php
 
-$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
+//$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
 $veza->exec("set names utf8");
 
 $upit = $veza->query("SELECT t.id, tak.naziv, t.ime, t.plasman FROM takmicar t, takmicenje tak WHERE t.id_takmicenja=tak.id;");
