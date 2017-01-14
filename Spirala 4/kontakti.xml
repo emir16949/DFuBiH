@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<root>
+<kontakti>
+    <kontakt>
+		<id>1</id>
+		<id_korisnika>1</id_korisnika>
+		<email>admin@gmail.com</email>
+		<komentar>Sve pet</komentar>
+		<pomoc_u_radu>1</pomoc_u_radu>
+		<donacija>1</donacija>
+	</kontakt>
+		
+    <kontakt>
+		<id>2</id>
+		<id_korisnika>2</id_korisnika>
+		<email>emir@gmail.com</email>
+		<komentar>Nista ne valja</komentar>
+		<pomoc_u_radu>0</pomoc_u_radu>
+		<donacija>0</donacija>
+	</kontakt>
+	
+    <kontakt>
+		<id>3</id>
+		<id_korisnika>2</id_korisnika>
+		<email>emir@gmail.com</email>
+		<komentar>Ma nije lose tolko</komentar>
+		<pomoc_u_radu>1</pomoc_u_radu>
+		<donacija>0</donacija>
+	</kontakt>
+</kontakti>
+</root>

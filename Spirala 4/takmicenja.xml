@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<root>
+<takmicenja>
+	<takmicenje>
+		<id>1</id>
+		<naziv>IPHO 2016</naziv>
+		<lokacija>Svicarska i Lihtenstajn, Zeneva</lokacija>
+	</takmicenje>
+	
+	<takmicenje>
+		<id>2</id>
+		<naziv>IPHO 2015</naziv>
+		<lokacija>Indija, Mumbai</lokacija>
+	</takmicenje>
+	
+	<takmicenje>
+		<id>3</id>
+		<naziv>IPHO 2014</naziv>
+		<lokacija>Kazahstan, Astana</lokacija>
+	</takmicenje>
+	
+	<takmicenje>
+		<id>4</id>
+		<naziv>RMPh 2015</naziv>
+		<lokacija>Rumunija, Bukurešt</lokacija>
+	</takmicenje>
+</takmicenja>
+</root>
