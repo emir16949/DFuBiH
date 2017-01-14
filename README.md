@@ -51,3 +51,53 @@ Dakle, ostalo je dodati provjere tih regeksa u zaglavlju, i u zavisnosti od toga
 ### V  - Lista fajlova u formatu NAZIVFAJLA - Opis u vidu jedne rečenice šta se u fajlu nalazi
 
 Mislim da su sami nazivi fajlova dovoljno intuitivni da se zaključi šta se u njima radi, dakle korisnici.php vrši editovanje korisnika, recimo Login.php je fajl koji upravlja loginovanjem na stranicu i sl.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Spirala 4
+
+### I  - Šta je urađeno?
+
+Urađene su sve stavke:
+
+a) Kreirana baza sa 5 tabela: korisnik, kontakt, 
+
+b) Urađeno da se adminu na dugme xml u bazu prebace svi korisnici iz xmla koji nisu u bazi.
+
+c) Urađeno učitavanje i spašavanje u bazu svega na stranici.
+
+d) Urađen openshift, link na user - https://console.preview.openshift.com/console/project/wtspirala4emirbarucija/overview
+link na samu stranicu : http://dfubihstranica-wtspirala4emirbarucija.44fs.preview.openshiftapps.com/Spirala%204/Kontakt.php
+
+e) Urađen web servis, webservis.php je skripta koja ga koristi, a slučajevi upotrebe pod f) su navedeni u POSTMAN folderu
+
+### II  - Šta nije urađeno?
+
+Svi traženi dijelovi su urađeni.
+
+
+
+### III - Bug-ovi koje ste primijetili ali niste stigli ispraviti, a znate rješenje (opis rješenja)
+
+Nisam primijetio da u commitanoj verziji ima ijedan bug.
+
+
+
+### IV  - Bug-ovi koje ste primijetili ali ne znate rješenje
+
+Nisam primijetio nikakve bugove
+
+### V  - Lista fajlova u formatu NAZIVFAJLA - Opis u vidu jedne rečenice šta se u fajlu nalazi
+
+Mislim da su sami nazivi fajlova dovoljno intuitivni da se zaključi šta se u njima radi, dakle korisnici.php vrši editovanje korisnika, recimo Login.php je fajl koji upravlja loginovanjem na stranicu i sl.
