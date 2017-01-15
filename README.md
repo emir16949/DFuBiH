@@ -71,21 +71,26 @@ Mislim da su sami nazivi fajlova dovoljno intuitivni da se zaključi šta se u n
 
 Urađene su sve stavke:
 
-a) Kreirana baza sa 5 tabela: korisnik, kontakt, 
+a) Kreirana baza sa 5 tabela: korisnik (id, ime, username, password), kontakt (foreign key na korisnik, poruka, email...), takmicar (id_takmicenja - foreign key, ime, plasman), takmičenje (naziv, lokacija), te novost (naslov, tekst).
+Veze dakle postoje između takmičara i takmičenja, te između kontakta i korisnika.
 
-b) Urađeno da se adminu na dugme xml u bazu prebace svi korisnici iz xmla koji nisu u bazi.
+b) U admin panelu, postoji dugme, na osnovu kojeg će se adminu snimiti ili updateovati svi podaci koji se nalaze u xmlovima a ne nalaze se u bazi. Isto tako, postoji mogućnost da ako je baza incijalno prazna, da se tada iz xmlova premjeste podaci u tu bazu.
 
-c) Urađeno učitavanje i spašavanje u bazu svega na stranici.
+c) Sva učitavanja i spašavanja na stranici su urađena sa bazom, dakle sve se čita iz baze, biše, updatea u bazu itd. Pošto openshift nije uspio da proradi ispravno, onda je ostavljen localhost, kako bi se mogle isprobati funkcionalnosti aplikacije.
 
-d) Urađen openshift, link na user - https://console.preview.openshift.com/console/project/wtspirala4emirbarucija/overview
-link na samu stranicu : http://dfubihstranica-wtspirala4emirbarucija.44fs.preview.openshiftapps.com/Spirala%204/Kontakt.php
+d) Pokušaj urađenog openshifta, sve urađeno po uputama, kreirana baza i sve: http://pokit.org/get/?91f940f0fd36ccff591cf9ba3f634e44.jpg
+link na projekat: http://dfubihstranica-wtspirala4emirbarucija.44fs.preview.openshiftapps.com/Spirala%204/Kontakt.php .
+Međutim, iz nekog razloga, bio je problem sa chmod komandom (http://pokit.org/get/?ba131c383c80f43315f158708e8189d5.jpg), te se nije uspjelo fino commitati na openshift.
+Tako da, sve u svemu, ovaj dio nije urađen, međutim, na njega je potrošeno možda i najviše vremena od svega, jer je i za treću spiralu ovo bilo urađeno, samo tada nisam znao da nakon linka treba dodati /Spirala 3/Kontakt.php, kao i ovdje što treba.
 
-e) Urađen web servis, webservis.php je skripta koja ga koristi, a slučajevi upotrebe pod f) su navedeni u POSTMAN folderu
+e) Web servis je urađen, web servisu se šalje GET zahtjev, i šalje se id korisnika, novosti ili takmičara, dok servis vraća sve podatke koji su vezani za navedeni ID.
+
+f) Urađeno nekoliko primjera, primjeri upotrebe se nalaze u POSTMAN folderu (pozvan servis da vrati korisnika, novost, te dva različita takmičara).
+
 
 ### II  - Šta nije urađeno?
 
-Svi traženi dijelovi su urađeni.
-
+Faktički nije urađen openshift.
 
 
 ### III - Bug-ovi koje ste primijetili ali niste stigli ispraviti, a znate rješenje (opis rješenja)
@@ -93,10 +98,9 @@ Svi traženi dijelovi su urađeni.
 Nisam primijetio da u commitanoj verziji ima ijedan bug.
 
 
-
 ### IV  - Bug-ovi koje ste primijetili ali ne znate rješenje
 
-Nisam primijetio nikakve bugove
+Kao što se vidi na slikama, potrudio sam se maksimalno, probavao naći na internetu šta je problem, dao sve od sebe, ali openshift i pored dvih uputstava koje sam našao, iz nekog razloga nije proradio ispravno.
 
 ### V  - Lista fajlova u formatu NAZIVFAJLA - Opis u vidu jedne rečenice šta se u fajlu nalazi
 

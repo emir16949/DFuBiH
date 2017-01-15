@@ -22,8 +22,8 @@
             zag(); $data = $_POST; rest_post($request, $data); break;
         case 'GET':
 
-		$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
-	//	$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+	//	$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
+		$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
         $veza->exec("set names utf8");
              
         zag();

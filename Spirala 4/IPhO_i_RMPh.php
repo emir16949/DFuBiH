@@ -45,8 +45,8 @@
 
 <?php
 
-$veza = new PDO("mysql:dbname=baza;host=mysql-55-centos7", "admin", "adminpass"));
-//$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+//$veza = new PDO("mysql:dbname=baza;host=mysql-55-centos7", "admin", "adminpass"));
+$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
 $veza->exec("set names utf8");
 
 $upit = $veza->query("SELECT * FROM takmicar t, takmicenje tak WHERE t.id_takmicenja = tak.id;");
