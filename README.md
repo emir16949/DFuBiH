@@ -80,7 +80,7 @@ c) Sva učitavanja i spašavanja na stranici su urađena sa bazom, dakle sve se 
 
 d) Pokušaj urađenog openshifta, sve urađeno po uputama, kreirana baza i sve: http://pokit.org/get/?91f940f0fd36ccff591cf9ba3f634e44.jpg
 link na projekat: http://dfubihstranica-wtspirala4emirbarucija.44fs.preview.openshiftapps.com/Spirala%204/Kontakt.php .
-Međutim, iz nekog razloga, bio je problem sa chmod komandom (http://pokit.org/get/?ba131c383c80f43315f158708e8189d5.jpg), te se nije uspjelo fino commitati na openshift.
+Međutim, iz nekog razloga, bio je problem sa chmod komandom (http://pokit.org/get/?1280811baaa4225be8be84f64e634e14.jpg ), te se nije uspjelo fino commitati na openshift.
 Tako da, sve u svemu, ovaj dio nije urađen, međutim, na njega je potrošeno možda i najviše vremena od svega, jer je i za treću spiralu ovo bilo urađeno, samo tada nisam znao da nakon linka treba dodati /Spirala 3/Kontakt.php, kao i ovdje što treba.
 
 e) Web servis je urađen, web servisu se šalje GET zahtjev, i šalje se id korisnika, novosti ili takmičara, dok servis vraća sve podatke koji su vezani za navedeni ID.
