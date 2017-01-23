@@ -82,6 +82,12 @@ d) Pokušaj urađenog openshifta, sve urađeno po uputama, kreirana baza i sve: 
 link na projekat: http://dfubihstranica-wtspirala4emirbarucija.44fs.preview.openshiftapps.com/Spirala%204/Kontakt.php .
 Međutim, iz nekog razloga, bio je problem sa chmod komandom (http://pokit.org/get/?1280811baaa4225be8be84f64e634e14.jpg ), te se nije uspjelo fino commitati na openshift.
 Tako da, sve u svemu, ovaj dio nije urađen, međutim, na njega je potrošeno možda i najviše vremena od svega, jer je i za treću spiralu ovo bilo urađeno, samo tada nisam znao da nakon linka treba dodati /Spirala 3/Kontakt.php, kao i ovdje što treba.
+UPDATE: Nakon što se ponovo trebala postaviti aplikacija, napravio sam novi Github account (emir169492), prijavio se na openshift, međutim nije mi dato odobrenje za novi account do ponedjeljka naveče.
+Nakon što sam na starom accountu obrisao staru verziju aplikacije kako bih napravio novu makar tu, nakon pravljenja mysql baze, php aplikacija unutar openshifta nije prošla build:
+http://pokit.org/get/?9e0b28d8a71d9dd6af36adaa2a465732.jpg
+build php dijela projekta na openshiftu je bio neuspješan... i pored najbolje volje da uradim sve što se tražilo, nisam uspio, vjerovatno je neki problem sa openshiftom jer su i druge kolege imale iste ovakve probleme.
+http://pokit.org/get/?b02bc69b917c45f985cc05ee4eca14b8.jpg
+Nadam se da će se ovaj problem sa openshiftom moći riješiti u neko skorije vrijeme.
 
 e) Web servis je urađen, web servisu se šalje GET zahtjev, i šalje se id korisnika, novosti ili takmičara, dok servis vraća sve podatke koji su vezani za navedeni ID.
 
