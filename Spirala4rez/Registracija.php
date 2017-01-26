@@ -62,8 +62,8 @@ session_start();
 		$password = md5($_POST['password']);
 		$ime = $_POST['ime'];
 		
-//		$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
-		$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+		$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'emiremir', 'emiremir');
+//		$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
 		$veza->exec("set names utf8");
 		
 		$upit = $veza->query("SELECT * FROM korisnik;");

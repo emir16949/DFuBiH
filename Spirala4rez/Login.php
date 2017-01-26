@@ -73,8 +73,8 @@
 				$stari_password = $password;
 				$password = md5($password);
 
-				//$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
-				$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+				$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'emiremir', 'emiremir');
+				//$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
 
 				$veza->exec("set names utf8");
 				
@@ -129,8 +129,8 @@
 <div id="container">
 
 <?php
-//$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'admin', 'adminpass');
-$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
+$veza = new PDO('mysql:host=' . getenv('MYSQL_SERVICE_HOST') . ';port=3306;dbname=baza', 'emiremir', 'emiremir');
+//$veza = new PDO("mysql:dbname=baza;host=localhost;charset=utf8", "root", "");
 $veza->exec("set names utf8");
 				
 $upit = $veza->query("SELECT * FROM korisnik WHERE id=1;");
