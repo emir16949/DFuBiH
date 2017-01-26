@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<root>
+<takmicari>
+	<takmicar>
+		<id>1</id>
+		<id_takmicenja>1</id_takmicenja>
+		<ime>Bahrudin Trbalic</ime>
+		<plasman>srebrena medalja</plasman>
+	</takmicar>
+	
+	<takmicar>
+		<id>2</id>
+		<id_takmicenja>2</id_takmicenja>
+		<ime>Bahrudin Trbalic</ime>
+		<plasman>bronzana medalja</plasman>
+	</takmicar>
+	
+	<takmicar>
+		<id>3</id>
+		<id_takmicenja>1</id_takmicenja>
+		<ime>Nermedin Dzekovic</ime>
+		<plasman>srebrena medalja</plasman>
+	</takmicar>
+	
+	<takmicar>
+		<id>4</id>
+		<id_takmicenja>2</id_takmicenja>
+		<ime>Nermedin Dzekovic</ime>
+		<plasman>bronzana medalja</plasman>
+	</takmicar>
+
+	<takmicar>
+		<id>5</id>
+		<id_takmicenja>1</id_takmicenja>
+		<ime>Dzenan Devedzic</ime> 
+		<plasman>pocasna pohvala</plasman>
+	</takmicar>
+</takmicari>
+</root>

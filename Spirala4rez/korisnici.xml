@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<root>
+<korisnici>
+    <user>
+		<id>1</id>
+		<username>admin</username>
+		<password>1a1dc91c907325c69271ddf0c944bc72</password>
+		<ocjena_stranice>1</ocjena_stranice>
+	</user>
+	<user>
+		<id>2</id>
+		<username>emir1</username>
+		<password>c4ca4238a0b923820dcc509a6f75849b</password>
+		<ocjena_stranice>0</ocjena_stranice>
+	</user>
+		
+	<user>
+		<id>3</id>
+		<username>testiramo</username>
+		<password>a87ff679a2f3e71d9181a67b7542122c</password>
+		<ocjena_stranice>2</ocjena_stranice>
+	</user>
+	<user>
+		<id>4</id>
+		<username>probni</username>
+		<password>c4ca4238a0b923820dcc509a6f75849b</password>
+		<ocjena_stranice>5</ocjena_stranice>
+	</user>
+</korisnici>
+</root>
