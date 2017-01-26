@@ -23,6 +23,8 @@ Stranica se ne reloada, urađeno uz pomoć javascripta te GET metode u phpu.
 Kada korisnik pritisne dugme traži, tada se učitavaju svi rezultati pretrage, a ne samo prvih 10.
 
 e) Urađen openshift, link na stranicu - http://wtprojekat-wtspirala.44fs.preview.openshiftapps.com/Spirala%203/Pocetna.php
+UPDATE: Nakon urađene spirale 4, zbog preimenovanja projekta, ova stranica više nije dostupna, novi link na stranicu vezanu za spiralu 3 je:
+http://dfubihstranica-wtspirala4emirbarucija.44fs.preview.openshiftapps.com/Spirala%203/Pocetna.php
 
 
 
@@ -76,18 +78,15 @@ Veze dakle postoje između takmičara i takmičenja, te između kontakta i koris
 
 b) U admin panelu, postoji dugme, na osnovu kojeg će se adminu snimiti ili updateovati svi podaci koji se nalaze u xmlovima a ne nalaze se u bazi. Isto tako, postoji mogućnost da ako je baza incijalno prazna, da se tada iz xmlova premjeste podaci u tu bazu.
 
-c) Sva učitavanja i spašavanja na stranici su urađena sa bazom, dakle sve se čita iz baze, biše, updatea u bazu itd. Pošto openshift nije uspio da proradi ispravno, onda je ostavljen localhost, kako bi se mogle isprobati funkcionalnosti aplikacije.
+c) Sva učitavanja i spašavanja na stranici su urađena sa bazom, dakle sve se čita iz baze, biše, updatea u bazu itd.
 
-d) Pokušaj urađenog openshifta, sve urađeno po uputama, kreirana baza i sve: http://pokit.org/get/?91f940f0fd36ccff591cf9ba3f634e44.jpg
-link na projekat: http://dfubihstranica-wtspirala4emirbarucija.44fs.preview.openshiftapps.com/Spirala%204/Kontakt.php .
-Međutim, iz nekog razloga, bio je problem sa chmod komandom (http://pokit.org/get/?1280811baaa4225be8be84f64e634e14.jpg ), te se nije uspjelo fino commitati na openshift.
-Tako da, sve u svemu, ovaj dio nije urađen, međutim, na njega je potrošeno možda i najviše vremena od svega, jer je i za treću spiralu ovo bilo urađeno, samo tada nisam znao da nakon linka treba dodati /Spirala 3/Kontakt.php, kao i ovdje što treba.
-UPDATE: Nakon što se ponovo trebala postaviti aplikacija, napravio sam novi Github account (emir169492), prijavio se na openshift, međutim nije mi dato odobrenje za novi account do ponedjeljka naveče.
-Nakon što sam na starom accountu obrisao staru verziju aplikacije kako bih napravio novu makar tu, nakon pravljenja mysql baze, php aplikacija unutar openshifta nije prošla build:
-http://pokit.org/get/?9e0b28d8a71d9dd6af36adaa2a465732.jpg
-build php dijela projekta na openshiftu je bio neuspješan... i pored najbolje volje da uradim sve što se tražilo, nisam uspio, vjerovatno je neki problem sa openshiftom jer su i druge kolege imale iste ovakve probleme.
-http://pokit.org/get/?b02bc69b917c45f985cc05ee4eca14b8.jpg
-Nadam se da će se ovaj problem sa openshiftom moći riješiti u neko skorije vrijeme.
+d) Što se tiče openshifta, nakon brojnih pokušaja, strpljenja, kreiranja novog accounta na githubu kako bi se mogao kreirati novi account na openshiftu, urađen je ovaj dio:
+http://dfubihstranica-wtspirala4emirbarucija.44fs.preview.openshiftapps.com/Spirala4rez/Pocetna.php
+To je link na početnu stranicu, odakle se može loginovati na adminov panel, preko username: admin, password: pass, ili se može kreirati novi korisnik, koji se automatski uloguje na stranicu.
+Dio sa openshiftom je sređen, urađen je dump baze na openshift, tako da imaju i neki početni testni podaci, a postoji i mogućnost uređivanja i editovanja tih podataka.
+Pošto je kreiran novi account, stari projekat (koji je imao rješenje spirale 3 i ostalo) je obrisan.
+Dalje, napravljen je novi folder Spirala4rez, u kojem je u svim .php fajlovima omogućena konekcija na bazu, dakle korišten PDO objekat koji se kači na bazu na openshiftu,
+dok je u folderu Spirala 4 urađeno preko localhosta, kako bi se moglo testirati na računaru.
 
 e) Web servis je urađen, web servisu se šalje GET zahtjev, i šalje se id korisnika, novosti ili takmičara, dok servis vraća sve podatke koji su vezani za navedeni ID.
 
