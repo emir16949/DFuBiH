@@ -95,7 +95,7 @@ f) Urađeno nekoliko primjera, primjeri upotrebe se nalaze u POSTMAN folderu (po
 
 ### II  - Šta nije urađeno?
 
-Faktički nije urađen openshift.
+Svi traženi dijelovi su urađeni.
 
 
 ### III - Bug-ovi koje ste primijetili ali niste stigli ispraviti, a znate rješenje (opis rješenja)
@@ -105,7 +105,8 @@ Nisam primijetio da u commitanoj verziji ima ijedan bug.
 
 ### IV  - Bug-ovi koje ste primijetili ali ne znate rješenje
 
-Kao što se vidi na slikama, potrudio sam se maksimalno, probavao naći na internetu šta je problem, dao sve od sebe, ali openshift i pored dvih uputstava koje sam našao, iz nekog razloga nije proradio ispravno.
+Nisam primijetio da u commitanoj verziji ima ijedan bug.
+
 
 ### V  - Lista fajlova u formatu NAZIVFAJLA - Opis u vidu jedne rečenice šta se u fajlu nalazi
 
